@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Fleet Telemetry - Apex Rides Systems</title>
+  <link rel="icon" type="image/png" href="../assets/images/brand-logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { heading: ['Space Grotesk', 'sans-serif'], body: ['Plus Jakarta Sans', 'sans-serif'] } } }
+    }
+  </script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body class="bg-[#fcfcfc] dark:bg-[#09090b] text-[#09090b] dark:text-[#f4f4f5] font-body transition-colors duration-300 antialiased min-h-screen flex flex-col justify-between">
+<!-- HEADER BRAND EMBED -->
+  <header class="border-b border-gray-100 dark:border-neutral-900 h-16 flex items-center justify-between px-6 bg-white/50 dark:bg-[#09090b]/50 backdrop-blur-md sticky top-0">
+     <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+        <img src="../assets/images/brand-logo.png" alt="Apex Rides Logo" class="h-10 w-auto group-hover:scale-105 transition-transform duration-300">
+        <span class="font-heading text-xl font-bold tracking-tight text-gray-900 dark:text-white hidden sm:block">
+          APEX<span class="font-light text-orange-600 dark:text-emerald-500">RIDES</span>
+        </span>
+      </a>
+    <button onclick="document.documentElement.classList.toggle('dark')" class="text-[10px] font-mono border border-gray-200 dark:border-neutral-800 px-2 py-1 rounded">
+      THEME
+    </button>
+  </header>
+
+  <main id="main-content" class="flex-1 flex items-center justify-center p-6">
+    <div class="max-w-md w-full text-center space-y-6">
+      
+      <!-- SECTION 1: ERROR CORE DIAGNOSTIC CODE -->
+      <div class="space-y-2">
+        <span class="text-xs font-mono font-bold text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950/40 px-2.5 py-1 rounded tracking-widest uppercase">
+          Status_Code: 404_Route_Not_Found
+        </span>
+        <h1 class="text-6xl font-bold font-heading tracking-tighter text-gray-900 dark:text-white">
+          Vector Drop
+        </h1>
+      </div>
+
+      <!-- SECTION 2: SYSTEM FAILURE EXPLANATION -->
+      <p class="text-xs text-gray-500 dark:text-neutral-400 leading-relaxed max-w-xs mx-auto ltr:text-center rtl:text-center">
+        The spatial tracking address requested does not correspond to an active resource index inside our centralized directory database mapping layers.
+      </p>
+
+      <!-- SECTION 3: EMBEDDED METRIC DATA PANEL -->
+      <div class="border border-gray-200 dark:border-neutral-800 p-3 rounded-lg bg-gray-50 dark:bg-neutral-900/50 text-[10px] font-mono text-gray-400 text-left rtl:text-right space-y-0.5">
+        <div>Fault_Vector: Variable_Path_Resolution_Failure</div>
+        <div>System_Time: 2026-05-23T16:39:03Z</div>
+      </div>
+
+      <!-- SECTION 4: ESCALATION ESCAPE CONTROLS -->
+      <div class="flex flex-col sm:flex-row justify-center gap-3 pt-2 text-xs font-semibold">
+        <a href="../index.html" class="bg-orange-600 dark:bg-emerald-600 text-white px-5 h-9 inline-flex items-center justify-center rounded-md">
+          Return to Hub Terminal
+        </a>
+        <a href="contact.html" class="border border-gray-200 dark:border-neutral-800 text-gray-700 dark:text-neutral-300 px-5 h-9 inline-flex items-center justify-center rounded-md hover:bg-gray-50 dark:hover:bg-neutral-900">
+          Report Broken Link Index
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
